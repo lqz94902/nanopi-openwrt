@@ -6,9 +6,6 @@ CONFIG_TARGET_OPTIMIZATION="-O3 -pipe -march=armv8-a+crypto+crc -mcpu=cortex-a53
 CONFIG_TARGET_ROOTFS_PARTSIZE=640
 
 
-
-CONFIG_PACKAGE_luci-app-ddnsto=y
-CONFIG_PACKAGE_luci-app-dockerman=y
 CONFIG_DOCKER_OPTIONAL_FEATURES=y
 CONFIG_PACKAGE_luci-app-godproxy=y
 CONFIG_PACKAGE_luci-app-netdata=y
@@ -17,16 +14,62 @@ CONFIG_PACKAGE_luci-app-cpufreq=y
 CONFIG_PACKAGE_luci-app-passwall=y
 CONFIG_PACKAGE_luci-app-qbittorrent=y
 CONFIG_PACKAGE_luci-app-statistics=y
+CONFIG_PACKAGE_luci-app-pushbot=y
+CONFIG_PACKAGE_mosdns=y
+CONFIG_PACKAGE_luci-app-unblockmusic=y
+CONFIG_PACKAGE_luci-i18n-unblockmusic-zh-cn=y
+CONFIG_UNBLOCKNETEASEMUSIC_GO_COMPRESS_UPX=y
+CONFIG_PACKAGE_UnblockNeteaseMusic-Go=y
+CONFIG_PACKAGE_luci-app-adbyby-plus=y
+CONFIG_PACKAGE_luci-app-adguardhome=y
+CONFIG_PACKAGE_luci-app-udpxy=y
+CONFIG_PACKAGE_luci-i18n-udpxy-zh-cn=y
+CONFIG_PACKAGE_udpxy=y
+CONFIG_PACKAGE_luci-app-eqos=y
+CONFIG_PACKAGE_luci-i18n-eqos-zh-cn=y
+
+CONFIG_PACKAGE_luci-app-cifs-mount=y
+CONFIG_PACKAGE_luci-app-cifsd=y
 
 CONFIG_PACKAGE_luci-theme-argon=y
 CONFIG_PACKAGE_luci-theme-openwrt=y
 CONFIG_PACKAGE_luci-theme-openwrt-2020=y
 CONFIG_PACKAGE_collectd-mod-ping=y
 CONFIG_PACKAGE_collectd-mod-thermal=y
+CONFIG_PACKAGE_dbus=y
+
+#uu
+CONFIG_PACKAGE_uugamebooster=y
+CONFIG_PACKAGE_luci-app-uugamebooster=y
+CONFIG_PACKAGE_luci-i18n-uugamebooster-zh-cn=y
+
+#ddns
+CONFIG_PACKAGE_luci-app-ddns=y
+CONFIG_PACKAGE_luci-i18n-ddns-zh-cn=y
+CONFIG_PACKAGE_ddns-scripts_cloudflare.com-v4=y
+CONFIG_PACKAGE_ddns-scripts_freedns_42_pl=y
+CONFIG_PACKAGE_ddns-scripts_godaddy.com-v1=y
+CONFIG_PACKAGE_ddns-scripts_no-ip_com=y
+CONFIG_PACKAGE_ddns-scripts_nsupdate=y
+CONFIG_PACKAGE_ddns-scripts_route53-v1=y
+
+#socat
 CONFIG_PACKAGE_socat=y
 CONFIG_PACKAGE_luci-app-socat=y
 CONFIG_PACKAGE_luci-i18n-socat-zh-cn=y
 
+#passwall
+CONFIG_PACKAGE_luci-app-passwall=y
+CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Haproxy=y
+CONFIG_PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR_Libev_Client=y
+CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Libev_Client=y
+CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Libev_Server=y
+CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Rust_Client=y
+CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Simple_Obfs=y
+CONFIG_PACKAGE_luci-app-passwall_INCLUDE_SingBox=y
+CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Trojan_Plus=y
+CONFIG_PACKAGE_luci-app-passwall_INCLUDE_V2ray_Plugin=y
+CONFIG_PACKAGE_luci-app-passwall_Iptables_Transparent_Proxy=y
 
 
 CONFIG_PACKAGE_kmod-gpu-lima=y
@@ -45,3 +88,29 @@ CONFIG_DRIVER_11N_SUPPORT=y
 CONFIG_DRIVER_11W_SUPPORT=y
 
 CONFIG_PACKAGE_luci-app-oled=y
+
+#python
+CONFIG_PACKAGE_python3=y
+CONFIG_PACKAGE_python3-asyncio=y
+CONFIG_PACKAGE_python3-base=y
+CONFIG_PACKAGE_python3-cgi=y
+CONFIG_PACKAGE_python3-cgitb=y
+CONFIG_PACKAGE_python3-codecs=y
+CONFIG_PACKAGE_python3-ctypes=y
+CONFIG_PACKAGE_python3-dbm=y
+CONFIG_PACKAGE_python3-decimal=y
+CONFIG_PACKAGE_python3-distutils=y
+CONFIG_PACKAGE_python3-email=y
+CONFIG_PACKAGE_python3-light=y
+CONFIG_PACKAGE_python3-logging=y
+CONFIG_PACKAGE_python3-lzma=y
+CONFIG_PACKAGE_python3-multiprocessing=y
+CONFIG_PACKAGE_python3-ncurses=y
+CONFIG_PACKAGE_python3-openssl=y
+CONFIG_PACKAGE_python3-pydoc=y
+CONFIG_PACKAGE_python3-readline=y
+CONFIG_PACKAGE_python3-sqlite3=y
+CONFIG_PACKAGE_python3-unittest=y
+CONFIG_PACKAGE_python3-urllib=y
+CONFIG_PACKAGE_python3-uuid=y
+CONFIG_PACKAGE_python3-xml=y
