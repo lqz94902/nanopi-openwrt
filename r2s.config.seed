@@ -1,4 +1,4 @@
-CONFIG_TARGET_rockchip=y
+CONFIG_TARGET_rockchip=yy
 CONFIG_TARGET_rockchip_armv8=y
 CONFIG_TARGET_rockchip_armv8_DEVICE_friendlyarm_nanopi-r2s=y
 
@@ -16,12 +16,9 @@ CONFIG_PACKAGE_iptables-mod-nat-extra=y
 CONFIG_PACKAGE_iptables-mod-socket=y
 CONFIG_PACKAGE_kmod-ipt-nat-extra=y
 CONFIG_PACKAGE_kmod-ipt-nat6=y
-CONFIG_PACKAGE_luci-app-cifs-mount=y
-CONFIG_PACKAGE_luci-app-cifsd=y
 
 CONFIG_PACKAGE_luci-app-dockerman=y
 CONFIG_DOCKER_OPTIONAL_FEATURES=y
-
 CONFIG_PACKAGE_luci-app-godproxy=y
 CONFIG_PACKAGE_luci-app-netdata=y
 CONFIG_PACKAGE_luci-app-openclash=y
@@ -44,7 +41,6 @@ CONFIG_PACKAGE_luci-app-eqos=y
 CONFIG_PACKAGE_luci-i18n-eqos-zh-cn=y
 CONFIG_PACKAGE_luci-app-accesscontrol=y
 CONFIG_PACKAGE_luci-i18n-accesscontrol-zh-cn=y
-
 CONFIG_PACKAGE_luci-i18n-netdata-zh-cn=y
 CONFIG_PACKAGE_netdata=y
 
@@ -55,7 +51,32 @@ CONFIG_PACKAGE_collectd-mod-ping=y
 CONFIG_PACKAGE_collectd-mod-thermal=y
 CONFIG_PACKAGE_dbus=y
 
-#uu
+CONFIG_PACKAGE_kmod-gpu-lima=y
+CONFIG_PACKAGE_kmod-ath9k-htc=y
+CONFIG_PACKAGE_kmod-mt76x0u=y
+CONFIG_PACKAGE_kmod-mt76x2u=y
+CONFIG_PACKAGE_kmod-r8125=y
+CONFIG_PACKAGE_kmod-rtw88=y
+CONFIG_PACKAGE_kmod-rtl8821cu=y
+
+CONFIG_PACKAGE_iw=y
+CONFIG_PACKAGE_iwinfo=y
+CONFIG_PACKAGE_wpad-basic-wolfssl=y
+CONFIG_DRIVER_11AC_SUPPORT=y
+CONFIG_DRIVER_11N_SUPPORT=y
+CONFIG_DRIVER_11W_SUPPORT=y
+CONFIG_PACKAGE_luci-app-oled=y
+
+#samba
+CONFIG_PACKAGE_samba36-server=y
+CONFIG_PACKAGE_luci-app-samba=y
+CONFIG_PACKAGE_luci-i18n-samba-zh-cn=y
+CONFIG_PACKAGE_kmod-fs-cifs=m
+CONFIG_PACKAGE_cifsmount=m
+CONFIG_PACKAGE_luci-app-cifs-mount=m
+CONFIG_PACKAGE_luci-i18n-cifs-mount-zh-cn=m
+
+#uugamebooster
 CONFIG_PACKAGE_uugamebooster=y
 CONFIG_PACKAGE_luci-app-uugamebooster=y
 CONFIG_PACKAGE_luci-i18n-uugamebooster-zh-cn=y
@@ -87,24 +108,6 @@ CONFIG_PACKAGE_luci-app-passwall_INCLUDE_SingBox=y
 CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Trojan_Plus=y
 CONFIG_PACKAGE_luci-app-passwall_INCLUDE_V2ray_Plugin=y
 CONFIG_PACKAGE_luci-app-passwall_Iptables_Transparent_Proxy=y
-
-
-CONFIG_PACKAGE_kmod-gpu-lima=y
-CONFIG_PACKAGE_kmod-ath9k-htc=y
-CONFIG_PACKAGE_kmod-mt76x0u=y
-CONFIG_PACKAGE_kmod-mt76x2u=y
-CONFIG_PACKAGE_kmod-r8125=y
-CONFIG_PACKAGE_kmod-rtw88=y
-CONFIG_PACKAGE_kmod-rtl8821cu=y
-
-CONFIG_PACKAGE_iw=y
-CONFIG_PACKAGE_iwinfo=y
-CONFIG_PACKAGE_wpad-basic-wolfssl=y
-CONFIG_DRIVER_11AC_SUPPORT=y
-CONFIG_DRIVER_11N_SUPPORT=y
-CONFIG_DRIVER_11W_SUPPORT=y
-
-CONFIG_PACKAGE_luci-app-oled=y
 
 #softethervpn
 CONFIG_PACKAGE_luci-app-softethervpn=y
