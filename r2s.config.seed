@@ -68,13 +68,12 @@ CONFIG_DRIVER_11W_SUPPORT=y
 CONFIG_PACKAGE_luci-app-oled=y
 
 #samba
-#CONFIG_PACKAGE_samba36-server=y
-#CONFIG_PACKAGE_luci-app-samba=y
-#CONFIG_PACKAGE_luci-i18n-samba-zh-cn=y
-CONFIG_PACKAGE_kmod-fs-smbfs-common=y
-CONFIG_PACKAGE_luci-app-ksmbd=y
-CONFIG_PACKAGE_kmod-fs-ksmbd=y
-CONFIG_PACKAGE_ksmbd-server=y
+CONFIG_PACKAGE_samba36-server=y
+CONFIG_PACKAGE_luci-app-samba=y
+CONFIG_PACKAGE_luci-i18n-samba-zh-cn=y
+#CONFIG_PACKAGE_luci-app-ksmbd=y
+#CONFIG_PACKAGE_kmod-fs-ksmbd=y
+#CONFIG_PACKAGE_ksmbd-server=y
 CONFIG_PACKAGE_kmod-fs-cifs=y
 CONFIG_PACKAGE_cifsmount=y
 CONFIG_PACKAGE_luci-app-cifs-mount=y
