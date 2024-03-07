@@ -73,10 +73,10 @@ sed -i 's/256/1024/' target/linux/x86/image/Makefile
 #sed -i 's/r8169/r8168/' target/linux/rockchip/image/armv8.mk
 
 # add pwm fan control service
-#wget https://github.com/friendlyarm/friendlywrt/commit/cebdc1f94dcd6363da3a5d7e1e69fd741b8b718e.patch
-#git apply cebdc1f94dcd6363da3a5d7e1e69fd741b8b718e.patch
-#rm cebdc1f94dcd6363da3a5d7e1e69fd741b8b718e.patch
-#sed -i 's/pwmchip1/pwmchip0/' target/linux/rockchip/armv8/base-files/usr/bin/fa-fancontrol.sh target/linux/rockchip/armv8/base-files/usr/bin/fa-fancontrol-direct.sh
+wget https://github.com/friendlyarm/friendlywrt/commit/cebdc1f94dcd6363da3a5d7e1e69fd741b8b718e.patch
+git apply cebdc1f94dcd6363da3a5d7e1e69fd741b8b718e.patch
+rm cebdc1f94dcd6363da3a5d7e1e69fd741b8b718e.patch
+sed -i 's/pwmchip1/pwmchip0/' target/linux/rockchip/armv8/base-files/usr/bin/fa-fancontrol.sh target/linux/rockchip/armv8/base-files/usr/bin/fa-fancontrol-direct.sh
 
 case $DEVICE in
   r2s|r2c|r1p|r1p-lts)
